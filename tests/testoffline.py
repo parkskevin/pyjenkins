@@ -6,10 +6,11 @@ import unittest
 import argparse
 import unittest
 import sys
+import os
 
 sys.path.insert(1, '/home/kevin/google_appengine')
 sys.path.insert(1, '/home/kevin/google_appengine/lib/yaml/lib')
-sys.path.insert(1, '/home/kevin/Desktop/pyjenkins/app')
+sys.path.insert(1, os.getcwd() + '/../app')
 from google.appengine.ext import testbed
 from google.appengine.api import memcache
 from google.appengine.ext import ndb
